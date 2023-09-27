@@ -90,6 +90,7 @@ export default class Conf<T extends Record<string, any> = Record<string, unknown
 			const ajv = new Ajv({
 				allErrors: true,
 				useDefaults: true,
+                coerceTypes: true
 			});
 			ajvFormats(ajv);
 
